@@ -23,6 +23,9 @@ namespace StackAndQueue_CSharp
             queue.Enqueue(30);
             queue.Enqueue(70);
             queue.Display();
+            Console.WriteLine("Dequeue Element from Queue");
+            queue.Dequeue();
+            queue.Display();
             Console.ReadLine();
         }
     }

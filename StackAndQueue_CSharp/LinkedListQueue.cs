@@ -17,7 +17,7 @@ namespace StackAndQueue_CSharp
             Node node = new Node(data);
             if (head == null)
             {
-                this.head = node;
+                head = node;
             }
             else
             {
@@ -28,6 +28,21 @@ namespace StackAndQueue_CSharp
                 }
                 temp.next = node;
             }         
+        }
+
+        /// <summary>
+        /// Dequeue Element from Queue
+        /// </summary>
+        internal void Dequeue()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Queue is Empty...");
+            }
+            else
+            {
+                head = head.next;
+            }
         }
 
         /// <summary>
