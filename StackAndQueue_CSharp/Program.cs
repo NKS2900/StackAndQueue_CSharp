@@ -8,6 +8,7 @@ namespace StackAndQueue_CSharp
         {
             Console.WriteLine("Welcome To LinkedListStack");
             LinkedListStack stack = new LinkedListStack();
+            Console.WriteLine("LinkedList_Stack");
             stack.push(70);
             stack.push(30);
             stack.push(56);
@@ -16,6 +17,12 @@ namespace StackAndQueue_CSharp
             stack.pop();
             stack.Display();
             stack.isEmpty();
+            LinkedListQueue queue = new LinkedListQueue();
+            Console.WriteLine("\nLinkedList_Queue");
+            queue.Enqueue(56);
+            queue.Enqueue(30);
+            queue.Enqueue(70);
+            queue.Display();
             Console.ReadLine();
         }
     }
