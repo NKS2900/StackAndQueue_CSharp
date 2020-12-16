@@ -35,6 +35,43 @@ namespace StackAndQueue_CSharp
         }
 
         /// <summary>
+        /// peek the top most element from stack.
+        /// </summary>
+        internal void peek()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("Stack is Empty...");
+            }
+            Console.WriteLine("\nTop Most Element in Stack : " + top.data);
+        }
+
+        /// <summary>
+        /// Pop remove the top Element from stack.
+        /// </summary>
+        internal void pop()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("Stack is Empty... ");
+            }
+            Console.WriteLine("Deleted Element : " + top.data);
+            top = top.next;
+        }
+
+        /// <summary>
+        /// Cheking stack isEmpty or not 
+        /// </summary>
+        internal void isEmpty()
+        {
+            while (top != null)
+            {
+                peek();
+                pop();
+            }
+            Console.WriteLine("Stack is Empty...");
+        }
+        /// <summary>
         /// Display Stack.
         /// </summary>
         public void Display()
